@@ -1,5 +1,7 @@
 """LangGraph workflow assembly for SeedStack."""
 
+from typing import TypedDict
+
 from langgraph.graph import StateGraph, START, END
 
 from generators import (
@@ -12,6 +14,16 @@ from generators import (
     gen_vue_views,
 )
 from builder import create_project, auto_build_fix
+
+
+class WorkflowState(TypedDict, total=False):
+    requirement: str
+    requirement_doc: str
+    api_doc: str
+    code_parts: list
+    project_dir: str
+    frontend_dir: str
+    build_errors: str
 
 
 def build_agent(draft_mode: bool = False, model=None):
@@ -28,7 +40,7 @@ def build_agent(draft_mode: bool = False, model=None):
     if not draft_mode:
         all_steps.append(("auto_build_fix", auto_build_fix))
 
-    wf = StateGraph(dict)
+    wf = StateGraph(WorkflowState)
     for name, fn in all_steps:
         # Wrap LLM-based steps to inject model
         if fn in (generate_docs, gen_backend_infra, gen_backend_domain,
