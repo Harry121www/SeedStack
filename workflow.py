@@ -16,7 +16,7 @@ from generators import (
 from builder import create_project, auto_build_fix
 
 
-class WorkflowState(TypedDict, total=False):
+class WorkflowState(TypedDict):
     requirement: str
     requirement_doc: str
     api_doc: str
@@ -48,8 +48,7 @@ def build_agent(draft_mode: bool = False, model=None):
                   gen_vue_views):
             original = fn
             fn = lambda state, f=original: f(state, model)
-
-        if fn == auto_build_fix:
+        elif fn == auto_build_fix:
             original = fn
             fn = lambda state, f=original: f(state, model)
 
