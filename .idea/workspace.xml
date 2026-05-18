@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54c32ad0-038f-4bef-b6f8-89340feab2b5" name="更改" comment="1">
+      <change beforePath="$PROJECT_DIR$/.claude/settings.local.json" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/settings.local.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +75,7 @@
       <workItem from="1778750960250" duration="418000" />
       <workItem from="1778751388569" duration="4253000" />
       <workItem from="1778830365617" duration="665000" />
-      <workItem from="1779085394469" duration="2995000" />
+      <workItem from="1779085394469" duration="8426000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />

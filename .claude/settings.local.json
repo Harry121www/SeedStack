@@ -33,7 +33,9 @@
       "Bash(rm -f \"F:\\\\Agent\\\\Test\\\\debug_*.txt\")",
       "Bash(git init *)",
       "Bash(git add *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(uv run *)",
+      "Bash(uv sync *)"
     ]
   }
 }
