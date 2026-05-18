@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(where uv *)",
+      "Bash(uv add *)",
+      "Bash(python -c \"from langchain_core.tools import tool; print\\('tool ok'\\)\")",
+      "Bash(python -c \"from langchain.agents import create_agent; print\\('create_agent ok'\\)\")",
+      "Bash(python -c \"from langgraph.prebuilt import create_react_agent; print\\('create_react_agent ok'\\)\")",
+      "Bash(python -c \"from langgraph.graph import StateGraph, START, END; print\\('StateGraph ok'\\)\")",
+      "Bash(python -c \"from langchain_core.messages import HumanMessage, AIMessage; print\\('messages ok'\\)\")",
+      "Bash(python -c \"from langchain_anthropic import ChatAnthropic; print\\('ChatAnthropic ok'\\)\")",
+      "Bash(python -c \"import langchain; print\\(langchain.__version__\\); import langgraph; print\\(langgraph.__version__\\)\")",
+      "Bash(python -c \"import main; print\\('✅ 模块加载成功'\\)\")",
+      "Bash(.venv/Scripts/python -c \"import main; print\\('✅ 模块加载成功'\\)\")",
+      "Bash(.venv/Scripts/python -c \"import main; print\\('OK'\\)\")",
+      "Bash(rm -rf \"F:/Agent/Test/hairpro_spring\")",
+      "Bash(.venv/Scripts/python main.py requirement.txt)",
+      "Bash(python -c \"import py_compile; py_compile.compile\\('main.py', doraise=True\\); print\\('Syntax OK'\\)\")",
+      "Bash(python -c \"from main import agent; print\\('Workflow compiled OK'\\); print\\('Nodes:', list\\(agent.get_graph\\(\\).nodes.keys\\(\\)\\)\\)\")",
+      "Bash(.venv/Scripts/python -c \"from main import agent; print\\('Workflow compiled OK'\\); print\\('Nodes:', list\\(agent.get_graph\\(\\).nodes.keys\\(\\)\\)\\)\")",
+      "Bash(cd:*)",
+      "Bash(npm:*)",
+      "Bash(npx:*)",
+      "Bash(mvn:*)",
+      "Bash(mkdir:*)",
+      "Bash(node:*)",
+      "Bash(dir:*)",
+      "Bash(find:*)",
+      "Bash(ls:*)",
+      "Bash(python:*)",
+      "Bash(.venv/Scripts/python:*)",
+      "Bash(rm -rf \"F:\\\\Agent\\\\Test\\\\huini_barter\")",
+      "Bash(rm -f \"F:\\\\Agent\\\\Test\\\\debug_*.txt\")"
+    ]
+  }
+}
